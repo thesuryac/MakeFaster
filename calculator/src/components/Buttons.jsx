@@ -8,13 +8,13 @@ const Buttons = ({ handleClick, handleACClick, handleEquals, handleDel }) => {
     <div className="h-4/6 w-full flex mt-2 gap-1">
       <div className="h-full w-full grid grid-cols-3 gap-1">
         <button
-          className="bg-green-500 col-span-2 border-white rounded-md"
+          className="bg-green-500 col-span-2 border-white rounded-md  font-bold text-xl"
           onClick={() => handleACClick()}
         >
           AC
         </button>
         <button
-          className="bg-blue-500 border border-white rounded-md"
+          className="bg-blue-500 border border-white rounded-md font-bold text-xl"
           onClick={() => handleDel()}
         >
           DEL
@@ -24,7 +24,7 @@ const Buttons = ({ handleClick, handleACClick, handleEquals, handleDel }) => {
           return (
             <button
               key={ind}
-              className="bg-yellow-400 border border-white rounded-md gap-1"
+              className="bg-yellow-400 border border-white rounded-md gap-1 font-bold text-xl"
               onClick={() => handleClick(button)}
             >
               {button}
@@ -32,7 +32,7 @@ const Buttons = ({ handleClick, handleACClick, handleEquals, handleDel }) => {
           );
         })}
         <button
-          className="bg-indigo-500 col-span-2 border-white rounded-md"
+          className="bg-indigo-500 col-span-2 border-white rounded-md font-bold text-xl"
           onClick={handleEquals}
         >
           =
@@ -43,7 +43,7 @@ const Buttons = ({ handleClick, handleACClick, handleEquals, handleDel }) => {
           return (
             <button
               key={operator}
-              className="bg-indigo-600 rounded-md border border-white"
+              className="bg-indigo-600 rounded-md border border-white font-bold text-xl"
               onClick={() => handleClick(operator)}
             >
               {operator}
