@@ -1,3 +1,5 @@
 # MakeFaster
 
-[Link to your calculator app](https://makefaster.onrender.com) 
+## Calculator
+
+[Link to calculator app](https://makefaster.onrender.com) 
