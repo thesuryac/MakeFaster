@@ -15,7 +15,7 @@ const App = () => {
     todos.push(todo);
     localStorage.setItem("todos", JSON.stringify(todos));
   }
-  function removeLocalTodos(todo, index) {
+  function removeLocalTodos(index) {
     let todos;
     if (localStorage.getItem("todos") === null) {
       todos = [];
@@ -41,14 +41,14 @@ const App = () => {
     const afterDelete = [...todos];
     afterDelete.splice(index, 1);
     setTodos(afterDelete);
-    removeLocalTodos(todo, index);
+    removeLocalTodos(index);
   };
   const handleEdit = (index) => {
     setTodo(todos[index]);
     const updateTodo = [...todos];
     updateTodo.splice(index, 1);
     setTodos(updateTodo);
-    removeLocalTodos(todo, index);
+    removeLocalTodos(index);
   };
   return (
     <div className="w-[90vw] mt-32 mx-auto">
